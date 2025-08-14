@@ -9,10 +9,22 @@
         //font-family: Arial, sans-serif; position:relative;
         //background: pink url('Nhung.jpg') center/cover no-repeat fixed;
 
-	margin:0; overflow:hidden; height:100vh;
-        font-family: Arial, sans-serif; position:relative;
-	background: pink url('Nhung.jpg') center center no-repeat fixed;
-        background-size: contain;
+	//margin:0; overflow:hidden; height:100vh;
+        //font-family: Arial, sans-serif; position:relative;
+	//background: pink url('Nhung.jpg') center center no-repeat fixed;
+        //background-size: contain;
+	background-color: pink;
+	margin: 0;
+	padding: 0;
+    }
+    .background-img{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	z-index: -1;
     }
 
     /* Background bay loạn xạ */
@@ -42,6 +54,7 @@
 </style>
 </head>
 <body>
+	<img class = "background-img" src="Nhung.jpg" alt="background">
 
 <div id="message"></div>
 
