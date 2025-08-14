@@ -5,9 +5,14 @@
 <title>Chúc mừng sinh nhật</title>
 <style>
     body {
-        margin:0; overflow:hidden; height:100vh;
+        //margin:0; overflow:hidden; height:100vh;
+        //font-family: Arial, sans-serif; position:relative;
+        //background: pink url('Nhung.jpg') center/cover no-repeat fixed;
+
+	margin:0; overflow:hidden; height:100vh;
         font-family: Arial, sans-serif; position:relative;
-        background: pink url('Nhung.jpg') center/cover no-repeat fixed;
+	background: pink url('Nhung.jpg') center center no-repeat fixed;
+        background-size: contain;
     }
 
     /* Background bay loạn xạ */
@@ -89,7 +94,7 @@
         }, 50);
 
         // Sau 2s hiển thị câu tiếp
-        let delay = 2000;
+        let delay = 3000;
         if (index === messages.length - 1) delay = 5000; // Câu cuối chờ 5s
         index = (index + 1) % messages.length;
         setTimeout(showMessage, delay);
